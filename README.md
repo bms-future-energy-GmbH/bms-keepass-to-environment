@@ -1,4 +1,4 @@
-# keepass-to-environment-variables
+# bms-keepass-to-environment
 
 This action puts keepass entries into environment variables, 
 entries whose title ends with the "_BASE64" postfix are exported once with their original name and value and once as
@@ -23,7 +23,7 @@ concatenate nested groups with "/", the empty string as default selects all entr
 ## Example usage
 
 ```yaml
-uses: bms-future-energy-GmbH/kte@v1.0
+uses: bms-future-energy-GmbH/bms-keepass-to-environment@v1.0
 with:
   keepass-file-path: 'database.kdbx'
   keepass-master-password: 'secret'
